@@ -1,0 +1,164 @@
+# rasa
+#models
+#tbdiet
+#tbted
+#results
+#train_test_split
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# binary data
+*.whl
+*.pkl
+*.ckpt
+*.sql
+*.sqlite
+*_db
+*.xlsx
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+*.pyo
+
+# C extensions
+*.so
+
+# Distribution / packaging
+#.Python
+#env/
+#build/
+#develop-eggs/
+#dist/
+#downloads/
+#eggs/
+#.eggs/
+#lib/
+#lib64/
+#parts/
+#sdist/
+#var/
+#*.egg-info/
+#.installed.cfg
+#*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+#pip-log.txt
+#pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+
+# Translations
+#*.mo
+#*.pot
+
+# Django stuff:
+#*.log
+
+# Sphinx documentation
+#docs/_build/
+
+# PyBuilder
+#target/
+
+###### compressed
+#*.7z
+#*.dmg
+#*.gz
+#*.iso
+#*.jar
+#*.msi
+#*.rar
+#*.tar
+#*.zip
+
+###### Logs
+**/logs
+**/tblogs
+log.txt
+*.log
+
+###### Temporary files
+#*_lock
+#.DS_Store
+#._*
+#*.bak
+#.Spotlight-V100
+#.Trashes
+#*.swp
+#*.swo
+#Thumbs.db
+#desktop.ini
+#*~
+
+# Temporary folders. single start for file sync; double for git.
+.prefect/
+downloads/
+*/.ipynb_checkpoints
+*/.ipynb_aml_checkpoints
+*/.cache
+**/__pycache__
+**/.ipynb_checkpoints
+**/.ipynb_aml_checkpoints
+**/.cache
+
+# settings
+.vscode
+.idea
+.iml
+*.sublime-workspace
+
+# Rasa models
+#**/models/*
+
+# data
+#MS-SNSD_Dataset/
+
+#Enzo_call_message/venv/
+#Enzo_weather/venv/
+#.idea/
+#Enzo_weather/actions/__pycache__/
+#Enzo_call_message/actions/__pycache__/
+#Enzo_weather/__pycache__/
+#Enzo_call_message/__pycache__/
+
+#/NoisySpeechTrain_timeSeries.npy
+#/NoisySpeechTest_timeSeries.npy
+#/noisy_train.npy
+#/noisy_test.npy
+#/ClearSpeechTrain_timeSeries.npy
+#/ClearSpeechTest_timeSeries.npy
+#/clear_train.npy
+#/clear_test.npy
+
+# Rasa story graphs
+**/story_graph.dot
+
+# Rasa cache
+<<<<<<< HEAD
+chatbot/.rasa/cachevenv
+/Description.txt
+=======
+chatbot/.rasa/cache
+chatbot/results
+>>>>>>> 7760f15ad7bb5ceb03c6812743485693c93f8cfc

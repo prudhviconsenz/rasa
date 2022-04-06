@@ -1,0 +1,34 @@
+version: "2.0"
+
+rules:
+- rule: activate_music_play_form
+  steps:
+  - intent: music_play
+  - action: music_play_form
+  - active_loop: music_play_form
+
+- rule: submit_music_play_form
+  steps:
+    - action: music_play_form
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: submit_music_play_form
+
+- rule: music_back
+  steps:
+  - intent: music_back
+  - action: utter_music_back
+
+- rule: music_forward
+  steps:
+  - intent: music_forward
+  - action: utter_music_forward
+
+- rule: music stop
+  steps:
+    - intent: cancel
+    - slot_was_set:
+       - topic: music
+    - action: utter_music_stop
+

@@ -1,0 +1,50 @@
+name: train
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - data/**
+      - domain/**
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 0 * * *'    # every day at midnight
+ 
+jobs:
+  train:
+    name: train model and upload to rasax
+    runs-on: ubuntu-latest
+   
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: validate
+        run: docker run --rm --workdir /chatbot -v ${PWD}:/chatbot rasa/rasa:2.8.11-full data validate -d domain
+      
+      - name: train
+        run: docker run --rm --workdir /chatbot -v ${PWD}:/chatbot rasa/rasa:2.8.11-full train -d domain
+
+      - name: append git hash to model
+        run: |
+          git_hash=`git rev-parse --short HEAD`
+          model=$(ls models |sort -r | head -n1)
+          mv models/$model models/$(basename $model .tar.gz)_$git_hash.tar.gz 
+
+      # upload models and tensorboard logs
+      - name: upload to github
+        uses: actions/upload-artifact@v2
+        with:
+          path: |
+            models
+            tbdiet
+            tbted
+
+      ###### better to upload manually as hits performance and can crash rasax
+      # - name: upload to rasax
+      #   run: |
+      #     url=http://haveme.com/projects/default/models
+      #     token=${{ secrets.RASAX_MODEL_UPLOAD }}
+      #     #model=$(ls models |sort -r | head -n1)
+      #     echo curl -F model=@models/$model $url?api_token=$token
+
+   

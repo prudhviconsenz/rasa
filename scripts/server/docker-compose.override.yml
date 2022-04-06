@@ -1,0 +1,43 @@
+version: '3.4'
+
+# custom components and treat domain as a folder
+x-rasa-services1:
+  &default-rasa-service
+  command: >
+    x --domain domain --no-prompt --production --config-endpoint
+    http://rasa-x:5002/api/config?token=${RASA_X_TOKEN} --port 5005 --jwt-method
+    HS256 --jwt-secret ${JWT_SECRET} --auth-token '${RASA_TOKEN}' --cors "*"
+  volumes:
+    - /etc/rasa/components/enzopreprocessor.py:/app/enzopreprocessor.py
+
+services:
+
+  # custom actions
+  app:
+    restart: always
+    image: simonm3a/chatbot:current
+    environment:
+      OPEN_WEATHER_MAP_API_KEY: ${OPEN_WEATHER_MAP_API_KEY}
+      POSITION_STACK_API_KEY: ${POSITION_STACK_API_KEY}
+    expose:
+      - "5055"
+    volumes:
+      - /etc/rasa/credentials:/app/credentials
+      - /etc/rasa/dbtest:/app/dbtest
+
+  # watch actions image repo and when updated then automatically restart and pull
+  watchtower:
+    restart: always
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/rasa/credentials/config.json:/config.json
+    command:
+      - --interval=30
+      - app
+
+  rasa-production:
+    <<: *default-rasa-service
+
+  rasa-worker:
+    <<: *default-rasa-service

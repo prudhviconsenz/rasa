@@ -1,0 +1,22 @@
+aws:
+  # if an image exists with this name then will launch it
+  name: enzo
+  #  ubuntu 20.04. not latest but works. more recent "apt-get update" fails
+  image: ami-0c4c42893066a139e
+  # cheapest 15MB RAM. AVX.
+  size: r3.large
+  volumesize: 50
+  # set this if you have a fixed ip address
+  ip: 52.210.144.236
+
+# list of file mappings from local to server
+upload:
+  - spotcheck.py
+  - rename.py
+  - configure.sh
+  - [shortcuts.sh, /etc/profile.d/shortcuts.sh]
+  - [../enzopreprocessor.py, /etc/rasa/components/enzopreprocessor.py]
+  - [docker-compose.override.yml, /etc/rasa/docker-compose.override.yml]
+  - [~/.rasa/.env_extra, /etc/rasa/.env_extra]  
+  - [~/.aws/credentials, .aws/credentials]
+  - [~/.spotify/creds.yml, /etc/rasa/credentials/.spotify/creds.yml]

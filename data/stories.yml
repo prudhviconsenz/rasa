@@ -1,0 +1,95 @@
+
+# version: "2.0"
+# stories:
+# - story: interactive_story_1
+#   steps:
+#   - intent: weather
+#     entities:
+#     - location: paris
+#   - slot_was_set:
+#     - location: paris
+#   - action: weather_handler
+#   - intent: navigate_search
+#     entities:
+#     - location_type: restaurant
+#   - action: navigate_search_form
+#   - active_loop: navigate_search_form
+#   - slot_was_set:
+#     - destination: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - slot_was_set:
+#     - choice: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - active_loop: null
+#   - intent: navigate_search
+#     entities:
+#     - location_type: restaurant
+#   - action: navigate_search_form
+#   - active_loop: navigate_search_form
+#   - slot_was_set:
+#     - destination: restaurant
+#   - slot_was_set:
+#     - choices:
+#       - restaurant1
+#       - restaurant2
+#   - slot_was_set:
+#     - choice: null
+#   - slot_was_set:
+#     - requested_slot: choice
+#   - slot_was_set:
+#     - choice: 1
+#   - slot_was_set:
+#     - destination: restaurant1
+#   - slot_was_set:
+#     - requested_slot: null
+#     - confirm_destination: True
+#   - active_loop: null
+#   - action: submit_navigate_search_form
+#   - slot_was_set:
+#     - active_route: null
+#   - slot_was_set:
+#     - destination: null
+#   - slot_was_set:
+#     - choices: null
+#   - slot_was_set:
+#     - choice: null
+#   - intent: navigate_search
+#     entities:
+#     - location_type: restaurant
+#   - action: navigate_search_form
+#   - active_loop: navigate_search_form
+#   - slot_was_set:
+#     - destination: restaurant
+#   - slot_was_set:
+#     - choices:
+#       - restaurant1
+#       - restaurant2
+#       - restaurant3
+#       - restaurant4
+#   - slot_was_set:
+#     - choice: null
+#   - slot_was_set:
+#     - requested_slot: choice
+#   - slot_was_set:
+#     - choice: null
+#   - slot_was_set:
+#     - requested_slot: choice
+#   - slot_was_set:
+#     - choice: 3
+#   - slot_was_set:
+#     - destination: restaurant3
+#   - slot_was_set:
+#     - requested_slot: null
+#     - confirm_destination: True
+#   - active_loop: null
+#   - action: submit_navigate_search_form
+#   - slot_was_set:
+#     - active_route: null
+#   - slot_was_set:
+#     - destination: null
+#   - slot_was_set:
+#     - choices: null
+#   - slot_was_set:
+#     - choice: null

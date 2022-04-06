@@ -1,0 +1,58 @@
+version: '2.0'
+
+intents:
+- call_make
+- message_send
+- call_accept
+
+responses:
+  utter_ask_contact_name:
+  - text: Who would you like to contact?
+  utter_ask_message:
+  - text: What message would you like to send?
+  utter_contact_not_found:
+  - text: Contact {contact_name} not found in phone book
+  utter_contact_found:
+  - text: found {contact_name} in phonebook
+  utter_contacts_found:
+  - text: Found {contacts} in the phonebook
+  utter_calling:
+  - text: Calling {contact_name} {contact_number}
+  utter_message_send:
+  - text: Sending message to {contact_name} {contact_number}......{message}
+  utter_ask_confirm_message:
+  - text: please confirm you want to send message to {contact_name} {contact_number}......{message}
+  
+actions:
+- validate_call_make_form
+- submit_call_make_form
+- validate_message_send_form
+- submit_message_send_form
+
+forms:
+  call_make_form:
+    required_slots:
+      contact_name:
+        - type: from_entity
+          entity: PERSON
+      contact_number:
+        - type: from_entity
+          entity: phone-number
+
+  message_send_form:
+    required_slots:
+      contact_name:
+        - type: from_entity
+          entity: PERSON
+      contact_number:
+        - type: from_entity
+          entity: phone-number
+      message:
+        - type: from_text
+      confirm_message:
+        - type: from_intent
+          value: True
+          intent: affirm
+        - type: from_intent
+          value: False
+          intent: deny

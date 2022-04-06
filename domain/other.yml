@@ -1,0 +1,36 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- affirm
+- deny
+- cancel
+- nlu_fallback
+
+actions:
+  - cancel
+
+responses:
+  utter_default:
+  - text: Sorry I did not understand. Please can you try again.
+  utter_database_updated:
+  - text: Database updated
+  utter_not_found:
+  - text: No options found
+  utter_only_option:
+  - text: only option is {choice}
+  utter_ask_choice:
+  - text: found several options {choices}. which would you like?
+  utter_selected_choice:
+  - text: you chose {choice}
+  utter_invalid_choice:
+  - text: that is not a valid option
+  utter_cancel:
+  - text: cancelling
+  utter_ask_cancel:
+  - text: do you want to cancel
+  

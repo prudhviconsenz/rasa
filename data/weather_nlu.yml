@@ -1,0 +1,197 @@
+version: "2.0"
+nlu:
+- intent: weather_temperature
+  examples: |
+    - tell me if it's [cold](hotcold) outside
+    - will it be [warm](hotcold) [tomorrow](time)
+    - I'd like to know the temperature
+    - do you know if it's [cold](hotcold) [now](time)
+    - is it going to be [chilly](hotcold) [tomorrow](time)
+    - temperature
+    - I'd like to know the temperature on [July 22](time) in [Tampa](location)
+    - show me the temperature
+    - I'd like to know the temperature in [London](location)
+    - what will the temperature be in [Munich](location) on [Monday](time)
+    - show me the temperature in [Paris](location) in [Fahrenheit](unit)
+    - check temperature in [Berlin](location)
+    - temperature in [San Diego](location) [next Wednesday](time)
+    - do you know if it's [cold](hotcold) outside [now](time)
+    - at [New York](location) is there [cold](hotcold)
+    - [today's](time) temperature
+    - what is the temperature [tomorrow](time) in [Campbell](location)
+    - is it [hot](hotcold) [now](time)
+    - temperature [tonight](time)
+    - is it going to be [cold](hotcold) [tomorrow](time) in [Dresden](location)
+    - temperature in [Bangkok](location)
+    - temperature in [Moscow](location)
+    - what's the temperature in [Moscow](location) in [Celsius](unit)
+    - allright is it [cold](hotcold) [tonight](time) in [Aspen](location)
+    - show me the temperature for [this weekend](time)
+    - what will the temperature be on [Monday](time)
+    - check temperature
+    - how [cold](hotcold) is it
+    - is there [warm](hotcold) in [New York](location)
+    - tell me if it's [cold](hotcold) in [Oslo](location)
+    - it's [chilly](hotcold) in [New York](location) right
+    - in [New York](location) is there [hot](hotcold)
+    - what is the temperature [tomorrow](time) in [Canberra](location)
+    - tell me if it will be [hot](hotcold) in [Ibiza](location) [next weekend](time)
+    - check temperature for [next week](time) in [Budapest](location)
+    - how [cold](hotcold) is it supposed to be [this week](time)
+    - show me the temperature in [Paris](location)
+    - it is [chilly](hotcold) in [London](location) [right now](time)
+    - check if it's going to be [freezing](hotcold) [tomorrow](time)
+    - how [cold](hotcold) is it in [Chicago](location)
+    - tell me if it will be [freezing](hotcold) on [Tuesday](time)
+    - is it [hot](hotcold)
+    - show me the temperature for [this weekend](time) in [Los Angeles](location)
+    - what's the temperature outside
+    - I'd like to know the temperature on [June 14](time)
+    - is it [hot](hotcold) in [Tokyo](location)
+    - [today's](time) temperature in [Salamanca](location)
+    - what's the temperature in [Madrid](location)
+    - is [today](time) a [hot](hotcold) day
+    - it's [chilly](hotcold) outside right
+    - check temperature for [next Friday](time)
+    - how [cold](hotcold) is it supposed to be [this Sunday](time) in [Mountain View](location)
+- intent: weather
+  examples: |
+    - show me the weather
+    - what's the weather going to be [tomorrow](time)
+    - I'd like to get the weather for [July 22](time)
+    - what is [today](time)'s weather
+    - how's the weather [today](time)
+    - what is the weather going to be like [today](time)
+    - weather in the [evening](time)
+    - what is the current weather at [SVO](location)
+    - what is the weather [tomorrow](time) in [Canberra](location)
+    - show me the weather in [Munich](location)
+    - what's the weather supposed to be in [Moscow](location)
+    - what's the weather like [this evening](time)
+    - how's the weather gonna be on [Monday](time)
+    - what is the weather like [today](time)
+    - weather [this morning](time)
+    - weather on [Friday](time)
+    - weather [Seattle](location)
+    - weather report
+    - weather in [London](location)
+    - weather in [afternoon](time)
+    - what's the weather like in our area
+    - weather at [night](time)
+    - how's the weather in [Rome](location)
+    - weather for [March 25](time)
+    - could you give me the weather forecast for [Hong Kong](location) please
+    - what will be the weather like in [Tokyo](location) on the [next weekend](time)
+    - weather in [Paris](location) in [Celsius](unit)
+    - weather [today](time)
+    - how's the weather going to be [today](time)
+    - weather in [Mamda](location)
+    - weather of [Salalah](location)
+    - weather [Montana](location)
+    - what will be the weather [today](time)
+    - what is the weather [tomorrow](time) in [Campbell](location)
+    - weather forecast in [Oakland](location) [next week](time)
+    - how is the weather in my area
+    - what's the weather forecast for [today](time)
+    - weather [Durban](location)
+    - weather in [Khanapur](location)
+    - [tomorrow](time)'s weather
+    - weather [now](time)
+    - what is the current weather in [Pune](location)
+    - what is the weather [this afternoon](time)
+    - weather [today](time) in [New York](location)
+    - tell me the weather for the [next week](time)
+    - tell me the weather in [Rome](location) in [Fahrenheit](unit)
+    - weather forecast in [Denver](location)
+    - [today](time)'s weather in [London](location)
+    - what is the weather for [Kernersville](location)
+    - what's the weather for [tomorrow](time)
+    - what's the weather supposed to be [next Friday](time) in [San Francisco](location)
+    - what is the weather in [Melbourne](location) [right now](time)
+    - I'd like to know the weather in [Madrid](location)
+    - weather outside
+    - weather in [Nirmal](location)
+    - what is the weather in [Cape Town](location)
+    - what is the weather like [right now](time)
+    - [tomorrow](time)'s weather report for [Brussels](location)
+    - what's the weather in my country
+    - what's the weather like
+    - weather in [Brooklyn](location) in [Celsius](unit)
+    - weather forecast for [Tuesday](time)
+    - the weather in [Miami](location) is what
+    - weather in [New York](location) [this morning](time)
+    - what was the weather for [March 2nd](time)
+    - show me weather for [today](time)
+    - what's the weather [today](time)
+    - what's the weather like at [New York](location)
+    - [today](time) weather
+    - what's the weather like in [San Diego](location) [tomorrow](time)
+    - what is the weather forecast for [this afternoon](time)
+    - now tell me the weather forecast in [Aspen](location)
+    - I'd like to know the weather for [November 13](time) in [Zurich](location)
+    - weather for the [fifth of May](time)
+    - what is the weather forecast for [this morning](time)
+    - what is the weather forecast for [tomorrow morning](time)
+    - I'd like to know the weather
+    - what's the weather going to be like later [today](time)
+    - what's the weather supposed to be [this week](time)
+    - what is the weather [today](time)
+    - what is the weather for [Greenville](location)
+    - what's the weather supposed to be
+    - weather on [Sunday](time)
+    - what's the weather like in [London](location)
+    - weather report for [Paris](location)
+    - weather in [Valencia](location) for [today](time)
+    - weather in [London](location) [in 5 days](time)
+    - how is the weather [today](time)
+    - what's the weather forecast in [San Francisco](location)
+    - show me the weather in [Milan](location) for [Wednesday](time)
+    - weather in this area
+    - tell me what's the weather like in [Atlanta](location)
+    - what's the weather in [New York](location) [this morning](time)
+    - find weather [India](location)
+    - what is [today](time)'s weather like
+    - weather in [Moscow](location) [tomorrow](time)
+    - weather outside [this evening](time)
+    - weather forecast in [Oakland](location)
+    - what's it like outside
+    - current forecast in [Valencia](location)
+    - what will be the weather like on the [weekend](time)
+    - forecast in [Tokyo](location)
+    - what's the weather like in [New York](location)
+    - what is [today](time)'s weather going to be in [London](location)
+    - show me the weather in [Fahrenheit](unit)
+    - weather for [April 3](time)
+    - weather
+    - [India](location) weather report
+- intent: weather_context:weather_comment:location&time
+  examples: |
+    - and what about [Paris](location) [next Friday](time)
+    - what about [Princeton](location) [tomorrow](time)
+    - in [Moscow](location) [this weekend](time)
+    - [tomorrow](time) in [Madrid](location)
+- intent: weather_context:weather_comment:location
+  examples: |
+    - now in [Aspen](location)
+    - [Moscow](location)
+    - what about [Aspen](location)
+    - can you check [Seattle](location)
+    - what about [Paris](location)
+    - what about [San Francisco](location)
+    - what about [Oakland](location)
+    - and in [London](location)
+- intent: weather_context:weather_comment:time
+  examples: |
+    - and during [next week](time)
+    - and [next weekend](time)
+    - on [Wednesday](time)
+    - check for [next Monday](time)
+    - and [tomorrow](time)
+    - what about [today](time)
+    - and what about [tomorrow](time)
+    - what about [tomorrow](time)
+    - check [next week](time)
+    - for [next month](time) too
+    - how about [Saturday](time)
+    - will it change at [5 pm](time)
+    - [this evening](time)

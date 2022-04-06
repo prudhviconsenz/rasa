@@ -1,0 +1,33 @@
+version: "2.0"
+nlu:
+- intent: message_send
+  examples: |
+    - send a message to [Vivek Madhusudhan](PERSON)
+    - page [Anders Watson](PERSON)
+    - Write to [Leo Södergren](PERSON)
+    - Send me a message to [Harshi Wanasinghe](PERSON)
+    - please send a message to [Anders Dewoon](PERSON)
+    - Please send a text to [Anders Dewoon](PERSON)
+    - please Message [Reza Carlsen](PERSON)
+    - please write to [Leo Watson](PERSON)
+    - Skicka ett medelande till [Leo Watson](PERSON)
+    - send sms to [Reza Watson](PERSON)
+    - Write to [Frida](PERSON)
+    - Text [Irina Watson](PERSON)
+    - message [harshi Wanasinghe](PERSON)
+    - message [Anders Dewoon](PERSON)
+    - can you please message [Anwar Södergren](PERSON)
+    - send message
+    - write message
+    - message
+    - send sms
+    - send sms to
+    - write to [Anna](PERSON)
+    - write
+    - send message to [Vivek](PERSON)
+    - send a text to [Vivek](PERSON)
+    - send text message to [Vivek](PERSON)
+    - send message to [0727333222](phone-number)
+    - message to [0778727642](phone-number)
+    - write to [0727333222](phone-number)
+    - message to [0778727642](phone-number)

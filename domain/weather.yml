@@ -1,0 +1,20 @@
+version: '2.0'
+
+intents:
+- weather
+- weather_temperature
+- weather_context:weather_comment:location
+- weather_context:weather_comment:location&time
+- weather_context:weather_comment:time
+
+responses:
+  utter_weather:
+  - text: basic response for weather
+  utter_weather_condition:
+  - text: basic response for weather-condition
+  utter_weather_temperature:
+  - text: basic response for weather-temperature
+
+actions:
+- weather_handler
+- weather_handler_temperature

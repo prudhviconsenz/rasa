@@ -1,0 +1,23 @@
+version: "2.0"
+
+rules:
+
+- rule: ask for weather
+  steps:
+  - intent: weather
+  - action: weather_handler
+
+- rule: ask for temperature - temperature
+  steps:
+  - intent: weather_temperature
+    entities:
+    - hotcold: hot
+  - action: weather_handler_temperature
+
+- rule: ask for temperature - temperature
+  steps:
+  - intent: weather_temperature
+  - action: weather_handler
+
+# still need to work on activity, condition and outfit and other temperature except cold
+# need to define function for checking weather conditions (rain, snow, tornado and etc.)

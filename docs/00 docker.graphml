@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by yEd 3.20.1-->
+  <key attr.name="Description" attr.type="string" for="graph" id="d0"/>
+  <key for="port" id="d1" yfiles.type="portgraphics"/>
+  <key for="port" id="d2" yfiles.type="portgeometry"/>
+  <key for="port" id="d3" yfiles.type="portuserdata"/>
+  <key attr.name="url" attr.type="string" for="node" id="d4"/>
+  <key attr.name="description" attr.type="string" for="node" id="d5"/>
+  <key for="node" id="d6" yfiles.type="nodegraphics"/>
+  <key for="graphml" id="d7" yfiles.type="resources"/>
+  <key attr.name="url" attr.type="string" for="edge" id="d8"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d9"/>
+  <key for="edge" id="d10" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <data key="d0" xml:space="preserve"/>
+    <node id="n0">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.0" width="125.0" x="69.0" y="55.0"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="55.357421875" x="34.8212890625" xml:space="preserve" y="5.1494140625">dockerfile<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n1">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.0" width="144.0" x="464.0" y="-28.25"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="134.03125" x="4.984375" xml:space="preserve" y="-2.201171875">EXTERNAL MAPPINGS
+run command<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n2">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.0" width="167.5" x="778.5" y="22.5"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="88.720703125" x="39.3896484375" xml:space="preserve" y="5.1494140625">docker logs app<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n3">
+      <data key="d6">
+        <y:ImageNode>
+          <y:Geometry height="218.0986584107327" width="392.20433436532505" x="-65.50441213622264" y="125.8863777089781"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="194.10216718266253" y="107.04932920536635"/>
+          <y:Image refid="1"/>
+        </y:ImageNode>
+      </data>
+    </node>
+    <node id="n4">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="34.943653250774105" width="221.15459236326103" x="450.03728033023765" y="47.154179566563585"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="92.20703125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="216.103515625" x="2.5255383691304587" xml:space="preserve" y="-28.631688999612948">docker run 
+--name app
+-v /etc/rasa/credentials:/app/credentials 
+-p 5055:5055 
+-d
+ simonm3a/chatbot:current<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n5">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.0" width="167.5" x="777.6338493292055" y="59.06336429308567"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="134.740234375" x="16.3798828125" xml:space="preserve" y="5.1494140625">docker exec -it app bash<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n6">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="127.15479876160987" width="273.77440660474724" x="701.2035087719298" y="139.09102167182664"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="106.908203125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#000000" verticalTextPosition="bottom" visible="true" width="248.787109375" x="4.0" xml:space="preserve" y="4.0">Benefits
+
+* Portable to any machine with docker runtime
+* Restarts clean every time
+* Same result every time
+* Sandboxed. Only has explicit permissions
+* Enables "service oriented architecture"</y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n7">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="32.0" width="137.0" x="798.0" y="-30.0"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.716796875" x="22.1416015625" xml:space="preserve" y="4.0">docker container</y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n8">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="49.0" width="137.0" x="63.0" y="-35.0"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.03515625" x="30.482421875" xml:space="preserve" y="4.0">READ ONLY
+docker image</y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n9">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.0" width="164.0" x="143.5" y="454.5"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="114.701171875" x="24.6494140625" xml:space="preserve" y="5.1494140625">docker-compose.yml<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n10">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.0" width="164.0" x="143.5" y="483.5"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="161.388671875" x="1.3056640625" xml:space="preserve" y="5.1494140625">docker-compose.override.yml<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n11">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.0" width="164.0" x="143.5" y="513.5"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="26.681640625" x="68.6591796875" xml:space="preserve" y="5.1494140625">.env<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n12">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="367.0" width="413.0" x="402.0" y="312.0"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.017578125" x="186.4912109375" xml:space="preserve" y="4.0">docker</y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n13">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="31.0" width="100.0" x="685.5" y="361.5"/>
+          <y:Fill color="#CCFFFF" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="64.69140625" x="17.654296875" xml:space="preserve" y="6.1494140625">watchtower<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n14">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="36.0" width="142.0" x="510.5" y="357.5"/>
+          <y:Fill color="#CCFFFF" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="50.013671875" x="45.9931640625" xml:space="preserve" y="1.298828125">app
+(actions)<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n15">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="142.0" x="417.5" y="447.5"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.6875" x="54.65625" xml:space="preserve" y="5.6494140625">nginx<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n16">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="142.0" x="442.5" y="472.5"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="37.33984375" x="52.330078125" xml:space="preserve" y="5.6494140625">rasa-x<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n17">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="142.0" x="467.5" y="497.5"/>
+          <y:Fill color="#CCFFCC" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="87.37890625" x="27.310546875" xml:space="preserve" y="5.6494140625">rasa-production<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n18">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="142.0" x="489.5" y="539.5"/>
+          <y:Fill color="#CCFFCC" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="67.345703125" x="37.3271484375" xml:space="preserve" y="5.6494140625">rasa-worker<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n19">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="142.0" x="514.5" y="564.5"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="34.017578125" x="53.9912109375" xml:space="preserve" y="5.6494140625">rabbit<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n20">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="142.0" x="539.5" y="589.5"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="17.34765625" x="62.326171875" xml:space="preserve" y="5.6494140625">db<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n21">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="142.0" x="564.5" y="614.5"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="48.02734375" x="46.986328125" xml:space="preserve" y="5.6494140625">duckling<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n22">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="142.0" x="589.5" y="639.5"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="30.009765625" x="55.9951171875" xml:space="preserve" y="5.6494140625">redis<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n23">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="32.0" width="137.0" x="835.0" y="363.0"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="60.0390625" x="38.48046875" xml:space="preserve" y="4.0">dockerhub</y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n24">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="64.54650324441238" width="207.96683489545782" x="385.08291276135526" y="-123.12833453496751"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.01953125" x="63.973651822728925" xml:space="preserve" y="15.572079747206189">Docker<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n25">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="34.943653250774105" width="221.15459236326103" x="111.0745606604753" y="552.3083591331272"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.38671875" x="55.883936806630516" xml:space="preserve" y="0.7706547503870524">cd /etc/rasa
+dokcer-compose up<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n26">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="21.0" width="105.0" x="-18.42105263157896" y="489.51625386996943"/>
+          <y:Fill color="#CCFFFF" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="26.013671875" x="39.4931640625" xml:space="preserve" y="1.1494140625">new<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n27">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="21.0" width="105.0" x="-20.42105263157896" y="458.26625386996943"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="30.021484375" x="37.4892578125" xml:space="preserve" y="1.1494140625">input<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n28">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="22.0" width="111.0" x="-21.0" y="517.449690402477"/>
+          <y:Fill color="#CCFFCC" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="47.376953125" x="31.8115234375" xml:space="preserve" y="1.6494140625">updated<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="58.821917808219176" y="8.459016393442653">
+            <y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.047945205479452024" nodeRatioY="-0.024590163934426257" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <edge id="e0" source="n1" target="n7">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e1" source="n8" target="n1">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e2" source="n0" target="n8">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e3" source="n13" target="n14">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="70.9921875" ty="1.1999999999999997"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e4" source="n14" target="n16">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="66.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e5" source="n10" target="n12">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e6" source="n3" target="n0">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e7" source="n23" target="n13">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+  </graph>
+  <data key="d7">
+    <y:Resources>
+      <y:Resource id="1" type="java.awt.image.BufferedImage" xml:space="preserve">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&#13;
+wQAAAABJRU5ErkJggg==</y:Resource>
+    </y:Resources>
+  </data>
+</graphml>

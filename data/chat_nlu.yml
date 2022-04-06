@@ -1,0 +1,169 @@
+version: "2.0"
+nlu:
+- intent: qr/out_of_scope
+  examples: |
+    - I want to order food
+    - what is 2+2
+    - who is the president of the usa
+    - what is the meaning of life
+- intent: qr/thank_you
+  examples: |
+    - thank you
+    - thank you Enzo
+    - thanks
+    - thanks Enzo
+    - thanks a lot
+    - ta mate
+- intent: qr/hello
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hey enzo
+    - enzo
+    - hi enzo
+    - hey Enzo
+    - Enzo
+- intent: qr/goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: qr/mood_great
+  examples: |
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: qr/mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: qr/what_scope
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are u bot
+    - who are you?
+    - What is your name ?
+    - Where do you work?
+    - Can you help me?
+    - what can you do?
+    - how can you help me?
+    - what services do you provide
+    - what do you do
+    - what is your scope
+    - what are your range of services
+    - what can you do
+- intent: qr/dislike
+  examples: |
+    - You're annoying.
+    - You are annoying.
+    - You're bad.
+    - You are bad.
+    - You're stupid.
+    - You are stupid.
+    - You're foolish.
+    - You are foolish.
+    - I don't like you.
+    - I do not like you.
+    - You're boring.
+    - You are boring.
+    - You're useless.
+    - You are useless.
+    - You're crazy.
+    - You are crazy.
+    - You're wrong.
+    - You are wrong.
+- intent: qr/like
+  examples: |
+    - You're beautiful.
+    - You are beautiful.
+    - You're clever.
+    - You are clever.
+    - You're cool.
+    - You are cool.
+    - You're good.
+    - You are good.
+    - You're funny.
+    - You are funny.
+    - You're useful.
+    - You are useful.
+    - You're so clever.
+    - You are so clever.
+    - I like you.
+    - I like you a lot.
+    - You're right.
+    - You are right.
+    - You're great.
+    - You are great.
+    - I'm impressed.
+    - Great job!
+    - You did well.
+- intent: qr/how_are_you
+  examples: |
+    - How are you?
+    - How are you doing?
+    - What's up?
+    - Doing well?
+    - Doing all right?
+    - Are you happy?
+    - Are you sad?
+    - Are you bored?
+    - How have you been?
+    - How's everything?
+    - How's it going?
+    - How are things going?
+    - What's going on?
+    - What's new?
+    - Whassup?
+    - What are you up to?
+    - How are you feeling today?
+    - How are you coping at the moment?
+- intent: qr/jokes
+  examples: |
+    - tell me a joke
+    - hit some jokes
+    - can you say anything?
+    - Say something
+    - Say some jokes, I am feeling bored.

@@ -1,0 +1,225 @@
+version: "2.0"
+nlu:
+- intent: music_play
+  examples: |
+    - '[Lil Wayne](artist) [Home To Mama](song)'
+    - '[Willow Smith](artist) play the song please'
+    - '[Maitre Gims](artist) song'
+    - '[Maroon 5](artist) songs'
+    - '[blues](genre) compositions'
+    - '[rock](genre) song'
+    - '[Maria](song) music'
+    - '[Lean On](song) on [Spotify](service)'
+    - '[Budapest](song) song'
+    - '[Thrift shop](song) song play'
+    - I wanna listen to [pop](genre)
+    - I want to hear [Monster](song)
+    - I want to hear a song
+    - I want to listen [Work](song) by [Ed Sheeran](artist)
+    - I want to listen the song [Dark Horse](song)
+    - I want to listen to [CeCe](artist)
+    - I want to listen to [Home To Mama](song)
+    - I want to listen to [Alive](song) performed by [David Guetta](artist)
+    - I want to listen to [On My Knees](song) song
+    - I want to listen to a song
+    - I want to listen to some music
+    - I want to listen to something by [Laura Pausini](artist)
+    - I want to listen to the [good](sort) songs of the year [1988](start_year)
+    - I want you to play music
+    - I would like to hear a song
+    - I would like to hear some music
+    - I would like to listen to a song
+    - I would like to listen to some music
+    - I'd like to listen [rap](genre)
+    - I'd like to listen to [hip hop](genre) opera
+    - I'd like to listen to music
+    - I'd like to listen to some music
+    - I'm in the mood for music
+    - Play [Aerosmith](artist)
+    - Play [Workout](playlist) playlist
+    - Show [newest](sort) songs by [Enrique Iglesias](artist)
+    - a song [Rock me](song)
+    - a song for me
+    - bring a song for me
+    - can I listen to [Bird](song)
+    - can I listen to [Macarena](song) song
+    - can you open [No Scrubs](song) in [Apple Music](service)
+    - can you open [Keep On Walking](song) song
+    - can you play [franoise hardy](artist)
+    - can you play [blues](genre) music
+    - can you play [Maria](song)
+    - can you play [Walking with a Ghost](song) by [Krystof](artist)
+    - can you play me a song
+    - can you play some music
+    - can you play song [Never listen](song)
+    - can you play the song [What Does the Fox Say](song)
+    - can you please play a song from my [50 Great Beatles Songs](playlist) playlist
+    - can you start playing music
+    - can you turn on my music
+    - change to my [Late Night](playlist) music
+    - give me music
+    - just play me a song
+    - just play music for me
+    - let me hear some music by [McClain](artist)
+    - let me hear something from [Taylor Swift](artist)
+    - let's hear [Skrillex](artist)
+    - let's hear some music
+    - let's listen to [In Da Club](song) by [Metallica](artist)
+    - music [Gorilla](song) in my library
+    - music play [Ca Marche](song)
+    - play [Starboy](album)
+    - play [Master of Puppets](album) by [The Antlers](artist)
+    - play [Songs about Jane](album) remastered by [The Police](artist)
+    - play [Pitbull](artist)
+    - play [Bowie](artist) [Best of You](song) feat [R Kelly](artist)
+    - play [Pitbull](artist) [Rap Call](song) song for me
+    - play [Elton John](artist) before [1989](end_year)
+    - play [Adele](artist) on [Google Music](service)
+    - play [Bob Dylan](artist)'s [Me Against the Music](song)
+    - play [country blues](genre)
+    - play [hip hop](genre) on [Spotify](service)
+    - play [smooth jazz](genre) songs on [YouTube](service)
+    - play [Telugu](language) songs
+    - play [Bengali](language) songs by [Imagine Dragons](artist)
+    - play [Work](playlist) playlist
+    - play [Alive](song)
+    - play [Chasing the Dragon](song) [Bob Dylan](artist)
+    - play [Work](song) by [Skrillex](artist)
+    - play [Sweater Weather](song) by [Adele](artist) on [Youtube](service)
+    - play [Unfaithful](song) by [Paul Simon](artist) song on [Google music](service)
+    - play [Focus](song) feat [Eurythmics](artist) by [Sia](artist) song on [Youtube](service)
+    - play [Mean Kitty](song) from [Bruno Mars](artist)
+    - play [Owner of a Lonely Heart](song) from [YouTube](service)
+    - play [Black Widow](song) from SD card
+    - play [Like a Virgin](song) from phone
+    - play [best](sort) [5](amount) songs from [1980](start_year)
+    - play [good](sort) [Skrillex](artist) songs
+    - play [good](sort) hits by [Theory of a Deadman](artist)
+    - play [greatest](sort) songs of [1980](start_year)
+    - play a [One Direction](artist) song
+    - play a [rock n roll](genre) song
+    - play a playlist
+    - play a song
+    - play a song [Miracle](song)
+    - play a song from [Pandora](service)
+    - play a song from my music library
+    - play a song on [YouTube](service)
+    - play album [Let it be](album)
+    - play album [Ramones](album) by [Taylor Swift](artist)
+    - play album [Tears in Heaven](album) by [Shaggy](artist) on [iTunes](service)
+    - play album [Sounds Good Field](album) on [Spotify](service)
+    - play album by [Whitney Houston](artist) year [2015](start_year)
+    - play an album by [Shaggy](artist)
+    - play any song of [Mozart](artist) from my library
+    - play any song which you like in my playlist
+    - play any songs in [Spanish](language)
+    - play artist [Aventura](artist)
+    - play for me some music
+    - play genre [Experimental](genre)
+    - play me a song by [Kid Rock](artist)
+    - play me some [Bart Baker](artist)
+    - play me some [rock n roll](genre)
+    - play me some [pop](genre) music
+    - play me some [top](sort) music
+    - play me some songs
+    - play me the music
+    - play music
+    - play music by [Wretch 32](artist)
+    - play music for me
+    - play music on [Google music](service)
+    - play my [late night](playlist) playlist
+    - play some [reggae](genre)
+    - play some [rock n roll](genre) music
+    - play some [jazz](genre) music from iPod
+    - play some good music
+    - play some good songs
+    - play some songs in [Bengali](language)
+    - play something by [Five Seconds of Summer](artist)
+    - play something from [Shaggy](artist)
+    - play song [Arctic Monkeys](artist) [Diamonds](song)
+    - play song [Focus](song)
+    - play song [Blank Space](song) by [Rihanna](artist)
+    - play song by [Nicki Minaj](artist)
+    - play song by [Guns N Roses](artist) and [J Cole](artist)
+    - play song for me
+    - play song from [Lisa Stansfield](artist)
+    - play song from [Spotify](service)
+    - play song from music
+    - play song from the album [Nevermind](album)
+    - play songs by [Amy Winehouse](artist)
+    - play songs form playlist [favourite](playlist)
+    - play the [my faves](playlist) playlist in [YouTube](service)
+    - play the [Chinta Ta Ta Chita Chita](song) song
+    - play the [newest](sort) song by [Arctic Monkeys](artist)
+    - play the album [19](album) by [Guns N Roses](artist)
+    - play the album [Let it be](album) on [Google music](service)
+    - play the artist [Foo Fighters](artist)
+    - play the song [Temperature](song)
+    - play the song [Disturbia](song) by [The Antlers](artist)
+    - play the song [Never Gone](song) by the artist [Louis Armstrong](artist)
+    - play what [Louis Armstrong](artist) wrote between [2016](start_year) and [1999](end_year)
+    - playing [The living end](artist) song
+    - please play [newest](sort) [10](amount) songs ever
+    - please play song [Still into You](song)
+    - put music on
+    - put on my [Work](playlist) playlist
+    - put on some [Five Seconds of Summer](artist)
+    - put on some music
+    - reproduce a the track [Love Me](song) by [Krystof](artist) ft [Queens of the stone age](artist)
+    - song [rock](genre)
+    - song for me
+    - songs by [Roxette](artist)
+    - start playing [21](song) song
+    - start up the track [Encantadora](song)
+    - switch to [Work](playlist) music
+    - the song [Miracles](song) by [Iggy Azalea](artist)
+    - turn on [chill](playlist) tracks
+    - turn on a song
+    - turn on the music
+    - will you please play [Bleeding Love](song)
+    - yes play music
+- intent: music_back
+  examples: |
+    - back
+    - back up a track
+    - go back
+    - go back to previous
+    - go back to previous song
+    - go back to previous station
+    - go to previous
+    - previous
+    - previous song
+    - previous station
+    - skip back
+    - skip backward
+    - skip to previous
+    - skip to the back
+    - skip to the previous song
+- intent: music_forward
+  examples: |
+    - go forward
+    - go to the next
+    - go to the next one
+    - next
+    - next please
+    - next song
+    - next track
+    - now the next one
+    - other
+    - play another one
+    - play next
+    - play next track
+    - play the next one
+    - play the next song
+    - skip
+    - skip forward
+    - skip next
+    - skip this song
+    - skip to next
+    - skip to the next one
+    - the following song
+    - the next please
+    - the next song
+    - what's next
+    - what's the next one
+    - what's the next song

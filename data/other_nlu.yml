@@ -1,0 +1,146 @@
+version: "2.0"
+nlu:
+- intent: cancel
+  examples: |
+    - cancel
+    - cancel that
+    - cancel [music](topic)
+    - cancel playing [music](topic)
+    - cancel [navigate](topic)
+    - cancel [calling](topic)
+    - cancel the [call](topic)
+    - Hang up
+    - Hang up the [call](topic)
+    - Reject
+    - Reject the [call](topic)
+    - close
+    - Decline
+    - Decline the [call](topic)
+    - hung up
+    - hung up the [call](topic)
+    - stopp
+    - stopp [music](topic)
+    - stopp the [music](topic)
+    - stopp playing [music](topic)
+    - stopp [driving](topic)
+    - stopp [navigation](topic)
+    - stopp [navigating](topic)
+    - stopp the [navigation](topic)
+    - stop
+    - stop [music](topic)
+    - stop the [music](topic)
+    - stop [song](topic)
+    - stop [track](topic)
+    - stop [playing](topic)
+    - stop playing [music](topic)
+    - stop [driving](topic)
+    - stop the [navigation](topic)
+    - cut
+    - can you stop the [music](topic)
+    - can you stop [navigation](topic)
+    - can you stop the [navigation](topic)
+    - could you stop
+    - enough
+    - enough [music](topic)
+    - [music](topic) off
+    - stop it
+    - stop [playing](topic)
+    - turn off [music](topic)
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - okay I will
+    - why not
+    - yes that's alright
+    - yes I do
+    - exactly
+    - yep that's ok
+    - okay
+    - ok
+    - for sure
+    - sg
+    - yes that't ok
+    - I agree
+    - yes you can do it
+    - I don't mind
+    - that one works
+    - that works
+    - sure why not
+    - perfect
+    - yep that's right
+    - I think so
+    - yes I agree
+    - sure
+    - sounds correct
+    - sounds good
+    - that's correct
+    - go ahead
+    - do it
+    - it's fine
+    - yeah
+    - yes please
+    - it's okay
+    - alright why not
+    - alright
+    - right
+    - it looks perfect
+    - yes I can
+    - yes I would
+    - yes I would like to
+    - yup
+    - yep
+    - confirm
+    - absolutely
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - thanks but no
+    - no no don't
+    - na
+    - no it isn't
+    - don't
+    - nah I'm good
+    - no I cannot
+    - I can't
+    - nothing
+    - no that's okay
+    - no not really
+    - nope not really
+    - nope
+    - thanks but not this time
+    - I disagree
+    - no maybe next time
+    - not this time
+    - no don't
+    - no we are good
+    - don't do it
+    - no that's be all
+    - not right now
+    - nothing else thanks
+    - no thanks
+    - no that's ok
+    - I don't want that
+    - definitely not
+    - nothing else
+    - not
+    - not at all
+    - no never
+    - no way no
+    - nah
+    - I don't
+    - I don't want
+    - not today
+    - not interested
+    - no that's fine thank you
+    - I'm not

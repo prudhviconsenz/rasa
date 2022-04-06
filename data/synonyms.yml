@@ -1,0 +1,132 @@
+version: "2.0"
+nlu:
+
+- synonym: home
+  examples: |
+    - I live at
+    - my home address
+    - home address
+    - my address
+    - My address
+    - My home
+    - my home
+    - my place
+- synonym: work
+  examples: |
+    - office
+    - my office
+    - my work address
+    - my business address
+    - My work address
+    - Work address
+    - work address
+    - my work
+    - office address
+    - business address
+    - my office address
+- synonym: navigate
+  examples: |
+    - navigation
+    - navigating
+    - driving
+- synonym: music
+  examples: |
+    - song
+    - track
+    - playing
+- synonym: C
+  examples: |
+    - Celsius
+    - Celsius degree
+    - Celsius degrees
+    - centigrade
+    - deg C
+    - degC
+    - degre Celsius
+    - degree Celsius
+    - degree centigrade
+    - degrees Celsius
+    - degrees centigrade
+- synonym: F
+  examples: |
+    - Fahrenheit
+    - Fahrenheit degree
+    - Fahrenheit degrees
+    - deg F
+    - degF
+    - degre Fahrenheit
+    - degree Fahrenheit
+    - degrees Fahrenheit
+- synonym: K
+  examples: |
+    - Kelvin
+    - Kelvins
+    - deg K
+    - degK
+    - degre Kelvin
+    - degree Kelvin
+    - degree Kelvins
+    - degrees Kelvin
+    - degrees Kelvins
+- synonym: R
+  examples: |
+    - Ra
+    - Rankine
+    - Rankine degree
+    - Rankine degrees
+    - deg R
+    - degR
+    - degre Rankine
+    - degree Rankine
+    - degrees Rankine
+- synonym: cold
+  examples: |
+    - extremely cold
+    - freezing
+    - freezing cold
+    - low
+- synonym: fog
+  examples: |
+    - mist
+    - foggy
+- synonym: hot
+  examples: |
+    - extremely hot
+    - high
+- synonym: cloudy
+  examples: |
+    - overcast
+    - clouds
+- synonym: rain
+  examples: |
+    - raining
+    - shower
+    - showers
+- synonym: snow
+  examples: |
+    - snowing
+- synonym: sun
+  examples: |
+    - sunny
+- synonym: warm
+  examples: |
+    - mild
+- synonym: navigate
+  examples: |
+    - navigating
+    - driving
+- synonym: music
+  examples: |
+    - playing
+- synonym: call
+  examples: |
+    - calling
+- regex: phone-number
+  examples: |
+    - [0-9]\d\d\d\d\d\d\d\d\d\d
+    - [0-9]\d{10}
+    - [0-9]\d{11}
+    - [0-9]\d{3}\d{2}\d{2}\d{3}
+    - [0-9]\d{3}\d{4}\d{3}
+    - \+(9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)\W*\d\W*\d\W*\d\W*\d\W*\d\W*\d\W*\d\W*\d\W*(\d{1,2})$
+

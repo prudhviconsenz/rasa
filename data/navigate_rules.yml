@@ -1,0 +1,49 @@
+version: "2.0"
+
+rules:
+- rule: navigate_check_time
+  steps:
+  - intent: navigation.time
+  - action: action_check_time_to_destination
+
+- rule: navigate_check_distance
+  steps:
+  - intent: navigation.distance
+  - action: action_check_distance_to_destination
+
+- rule: navigate_stop
+  steps:
+    - intent: cancel
+    - slot_was_set:
+      - topic: navigate
+    - action: action_stop_navigation
+    - action: action_analyse_speed
+
+#######################
+
+- rule: activate_navigate_form
+  steps:
+  - intent: navigate
+  - action: navigate_form
+  - active_loop: navigate_form
+
+- rule: submit_navigate_form
+  steps:
+    - action: navigate_form
+    - active_loop: null
+    - action: submit_navigate_form
+
+########################
+
+- rule: activate_navigate_search_form
+  steps:
+  - intent: navigate_search
+  - action: navigate_search_form
+  - active_loop: navigate_search_form
+
+- rule: submit_navigate_search_form
+  steps:
+    - action: navigate_search_form
+    - active_loop: null
+    - action: submit_navigate_search_form
+

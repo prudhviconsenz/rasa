@@ -1,0 +1,79 @@
+version: "2.0"
+
+stories:
+- story: context-weather, command-location and time
+  steps:
+  - intent: weather
+  - action: weather_handler
+  - or:
+    - intent: weather_context:weather_comment:location&time
+    - intent: weather_context:weather_comment:location
+    - intent: weather_context:weather_comment:time
+  - action: weather_handler
+
+- story: interactive_story_1
+  steps:
+  - intent: weather
+  - action: weather_handler
+
+- story: interactive_story_2
+  steps:
+  - intent: weather
+    entities:
+    - location: Paris
+  - slot_was_set:
+    - location: Paris
+  - action: weather_handler
+
+- story: interactive_story_3
+  steps:
+  - intent: weather
+    entities:
+    - time: today
+  - slot_was_set:
+    - time: today
+  - action: weather_handler
+
+- story: interactive_story_4
+  steps:
+  - intent: weather
+    entities:
+    - time: tomorrow
+  - slot_was_set:
+    - time: tomorrow
+  - action: weather_handler
+  - intent: weather_context:weather_comment:location
+    entities:
+    - location: Paris
+  - slot_was_set:
+    - location: Paris
+  - action: weather_handler
+
+- story: interactive_story_5
+  steps:
+  - intent: weather_temperature
+    entities:
+    - location: Ampara
+  - slot_was_set:
+    - location: Ampara
+  - action: weather_handler
+
+- story: interactive_story_6
+  steps:
+  - intent: weather_temperature
+    entities:
+    - location: Moscow
+  - slot_was_set:
+    - location: Moscow
+  - action: weather_handler
+  - intent: weather_temperature
+    entities:
+    - hotcold: cold
+  - slot_was_set:
+    - hotcold: cold
+  - action: weather_handler_temperature
+
+- story: interactive_story_7
+  steps:
+  - intent: weather_temperature
+  - action: weather_handler

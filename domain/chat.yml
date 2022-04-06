@@ -1,0 +1,43 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- qr
+
+responses:
+  utter_qr/out_of_scope:
+  - text: Sorry, I can't handle requests like that yet. you can ask me anything but my focus is music, navigation, weather, calls, messages and chat
+  utter_qr/thank_you:
+  - text: You are welcome
+  - text: Welcome
+  - text: You are very welcome
+  - text: You are always welcome
+  utter_qr/hello:
+  - text: Hello! How can I help?
+  - text: Hey! how may I assist you?
+  utter_qr/goodbye:
+  - text: Talk to you later!
+  - text: Bye
+  - text: See you!
+  utter_qr/mood_great:
+  - text: Good to hear that
+  utter_qr/mood_unhappy:
+  - text: Oh no. Sorry to hear that.
+  utter_qr/what_scope:
+  - text: you can ask me anything but my focus is music, navigation, weather, calls, messages and chat
+  utter_qr/dislike:
+  - text: Sorry, I'm working on it
+  - text: Sorry, I will try to get better
+  utter_qr/like:
+  - text: Thank you, I'm glad you like me!
+  utter_qr/how_are_you:
+  - text: I am fine. Thank you.`
+  - text: I am doing great, thank you!
+  - text: Doing all right.
+  utter_qr/jokes:
+  - text: I can sing a song like a professional for you.
+  - text: My sense of humour is far better than anyone in the world. Just kidding.

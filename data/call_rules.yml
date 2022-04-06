@@ -1,0 +1,18 @@
+
+version: "2.0"
+
+rules:
+
+- rule: activate_call_make_form
+  steps:
+  - intent: call_make
+  - action: call_make_form
+  - active_loop: call_make_form
+
+- rule: submit_call_make_form
+  steps:
+    - action: call_make_form
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: submit_call_make_form

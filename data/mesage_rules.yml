@@ -1,0 +1,17 @@
+version: "2.0"
+
+rules:
+
+- rule: activate_message_send_form
+  steps:
+  - intent: message_send
+  - action: message_send_form
+  - active_loop: message_send_form
+
+- rule: submit_message_send_form
+  steps:
+    - action: message_send_form
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: submit_message_send_form

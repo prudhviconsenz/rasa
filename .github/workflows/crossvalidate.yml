@@ -1,0 +1,28 @@
+name: cross-validate 
+on:
+  # push:
+  #   branches: [ master ]
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 0 * * *'    # every day at midnight 
+
+jobs:
+  train:
+    name: cross-validate and save results
+    runs-on: ubuntu-latest
+   
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: cross-validate
+        run: docker run --rm --workdir /chatbot -v ${PWD}:/chatbot rasa/rasa:2.8.11-full test --cross-validation -f 5
+
+      - name: upload results
+        uses: actions/upload-artifact@v2
+        with:
+          path: |
+            results
+            reports
+
+   

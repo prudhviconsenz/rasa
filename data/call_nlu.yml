@@ -1,0 +1,58 @@
+version: "2.0"
+nlu:
+  
+- intent: call_make
+  examples: |
+    - call
+    - call [home](PERSON)
+    - call [office](PERSON)
+    - call [work](PERSON)
+    - make a call
+    - Give a call
+    - call [Leo Trump](PERSON)
+    - Could you try call [Anders Dewoon](PERSON)
+    - Could you try reach [Anders Dewoon](PERSON)
+    - Could you reach [Anders Watson](PERSON)
+    - Could you call [Anders Watson](PERSON)
+    - Reach [Anders Carlsen](PERSON)
+    - Try reach [Anders Carlsen](PERSON)
+    - Give a call to [Anders Carlsen](PERSON)
+    - Telephone [Reza Dewoon](PERSON)
+    - call [Anders Dewoon](PERSON)
+    - Ring [Leo Watson](PERSON)
+    - Dial [Leo Watson](PERSON)
+    - Dial [0727407993](phone-number)
+    - Dial [+447911123456](phone-number)
+    - please call [Harshi Wanasinghe](PERSON)
+    - Make a phone Call to [Leo Södergren](PERSON)
+    - Can you Call [Irina Svishcheva](PERSON)
+    - Try calling [Frida Watson](PERSON)
+    - Call [Frida](PERSON)
+    - Call [Reza](PERSON)
+    - Call [Anwar](PERSON)
+    - Call my contact [Leo](PERSON)
+    - call [Anna](PERSON)
+    - call contact in my phone book [Saheen Ahamed](PERSON)
+    - call [Vivek](PERSON)
+    - Dial [Vivek](PERSON)
+    - call [Saheen](PERSON)
+    - call [01789344332](phone-number)
+    - call [+32-2343-45455](phone-number)
+    - call [0727407993](phone-number)
+    - try call [0727407993](phone-number)
+    - Dial [0727407993](phone-number)
+    - sure, [0778727642](phone-number)
+    - call [0727407993](phone-number)
+    - try call [write 0727407993](phone-number)
+
+- intent: call_accept
+  examples: |
+    - Pick up
+    - Answer
+    - Accept
+    - Pick up the Phone
+    - Answer the Phone
+    - Accept the Phone
+    - Pick up the call
+    - Answer the call
+    - Accept the call

@@ -1,0 +1,8 @@
+version: "2.0"
+
+rules:
+
+- rule: question-response
+  steps:
+  - intent: qr
+  - action: utter_qr

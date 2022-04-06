@@ -1,0 +1,138 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      hello there!
+    intent: hello
+  - action: utter_hello
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - user: |
+      hello there!
+    intent: hello
+  - action: utter_hello
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - user: |
+      hello
+    intent: hello
+  - action: utter_hello
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_sad
+
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: Navigate to location
+  steps:
+  - user: |
+      hello
+    intent: hello
+  - action: utter_hello
+  - user: |
+     navigate to [7 Victor Hugo drive]{"entity": "location", "role": "to"} please
+    intent: navigate
+  - action: action_find_destination
+  - slot_was_set:
+    - active_route: 7 Victor Hugo drive
+  - action: action_set_user_feats
+  - slot_was_set:
+    - is_talkative: false
+  - action: action_start_navigation
+  - action: utter_navigation_started
+
+- story: Navigate
+  steps:
+  - user: |
+     navigate
+    intent: navigate
+  - action: action_find_destination
+  - slot_was_set:
+    - active_route: null
+    - destination: null
+  - action: action_set_user_feats
+  - slot_was_set:
+    - is_talkative: false
+  - action: utter_ask_for_destination
+  - action: action_listen
+  - user: |
+     [5 High street]{"entity": "location", "role": "to"}
+    intent: navigate
+  - action: action_find_destination
+  - slot_was_set:
+    - active_route: 5 High street
+  - action: action_start_navigation
+  - action: utter_navigation_started
+
+- story: Stop navigation
+  steps:
+  - user: |
+     Stop [navigation]{"entity": "topic"}
+    intent: cancel
+  - slot_was_set:
+      - topic: navigation
+  - action: action_stop_navigation
+  - action: action_analyse_speed
+
+# - story: Suggested_location
+#   steps:
+#   - user: |
+#      navigate
+#     intent: navigate
+#   - action: action_find_destination
+#   - slot_was_set:
+#     - active_route: null
+#     - destination: "42nd street Madison Avenue"
+#   - action: action_set_user_feats
+#   - slot_was_set:
+#     - is_talkative: false
+#   - action: utter_confirm_destination
+#   - action: action_listen
+#   - user: |
+#      yes please
+#     intent: affirm
+#   - action: action_start_navigation
+#   - slot_was_set:
+#     - active_route: "42nd street Madison Avenue"
+#     - destination: null
+#   - action: utter_navigation_started
+
+- story: cancel_navigate
+  steps:
+    - user: |
+        navigate please
+      intent: navigate
+    - action: action_find_destination
+    - slot_was_set:
+      - active_route: null
+      - destination: null
+    - action: action_set_user_feats
+    - slot_was_set:
+      - is_talkative: false
+    - action: utter_ask_for_destination
+    - action: action_listen
+    - intent: cancel
+    - action: utter_cancel

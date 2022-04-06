@@ -1,0 +1,19 @@
+version: "2.0"
+
+rules:
+
+- rule: Implementation of the Two-Stage-Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_reprompt
+
+- rule: cancel without topic closes current form
+  condition:
+  - slot_was_set:
+    - topic: null
+  steps:
+  - intent: cancel
+  - action: cancel
+  - action: action_deactivate_loop
+  - active_loop: null
+  - action: utter_cancel

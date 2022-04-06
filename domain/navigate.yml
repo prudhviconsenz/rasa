@@ -1,0 +1,91 @@
+version: '2.0'
+
+intents:
+- add_to_database
+- Map_View
+- navigate
+- navigate_search
+- navigation.distance
+- navigation.time
+- navigation.turn
+
+responses:
+  utter_ask_destination:
+  - text: Where do you want to go?
+  - text: Where would you like to go?
+  utter_ask_confirm_destination:
+  - text: Would you like to drive to {destination}?
+  utter_destination_found:
+  - condition:
+    - name: is_talkative
+      type: slot
+      value: true
+    text: Hey, sure. Destination {destination} found
+  - text: Destination {destination} found
+  utter_navigation_started:
+  - condition:
+    - name: is_talkative
+      type: slot
+      value: true
+    text: Hey, sure. Starting navigation to {destination}
+  - text: Navigating to {destination}
+  utter_distance:
+  - text: Distance is calculated
+
+actions:
+- action_check_distance_to_destination
+- action_check_time_to_destination
+- action_reprompt
+- action_set_user_feats
+- action_stop_navigation
+- action_analyse_speed
+- validate_navigate_form
+- submit_navigate_form
+- validate_navigate_search_form
+- submit_navigate_search_form
+
+forms:
+  navigate_form:
+    required_slots:
+      destination:
+        - type: from_entity
+          entity: location
+          role: to
+      from_location:
+        - type: from_entity
+          entity: location
+          role: from
+      via:
+        - type: from_entity
+          entity: location
+          role: via
+      avoiding:
+        - type: from_entity
+          entity: location
+          role: avoiding
+      confirm_destination:
+        - type: from_intent
+          value: True
+          intent: affirm
+        - type: from_intent
+          value: False
+          intent: deny
+
+  navigate_search_form:
+    required_slots:
+      search:
+        - type: from_entity
+          entity: location_type
+      choice:
+        - type: from_entity
+          entity: ordinal
+        - type: from_entity
+          entity: number
+        - type: from_text
+      confirm_destination:
+        - type: from_intent
+          value: True
+          intent: affirm
+        - type: from_intent
+          value: False
+          intent: deny

@@ -1,0 +1,45 @@
+version: '2.0'
+
+intents:
+- music_play
+- music_back
+- music_forward
+
+responses:
+  utter_music_play:
+  - text: basic response for music_play
+  utter_music_stop:
+  - text: stopping music
+  utter_music_back:
+  - text: basic response for music_back
+  utter_music_forward:
+  - text: basic response for music_forward
+  utter_play_song:
+  - text: playing {song} by {artist}
+  utter_play_album:
+  - text: playing {song} by {artist} from album {album}
+  utter_ask_artist:
+  - text: what would you like to play
+
+actions:
+- submit_music_play_form
+- validate_music_play_form
+
+forms:
+  music_play_form:
+    required_slots:
+      artist:
+        - type: from_entity
+          entity: artist
+      genre:
+        - type: from_entity
+          entity: genre
+      playlist:
+        - type: from_entity
+          entity: playlist
+      album:
+        - type: from_entity
+          entity: album
+      song:
+        - type: from_entity
+          entity: song
