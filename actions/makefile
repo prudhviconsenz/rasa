@@ -1,11 +1,11 @@
 .PHONY:=default build push current
-NAME   := simonm3a/chatbot
+NAME   := prudhviconsenz/rasa
 TAG    := $(shell git log -1 --pretty=%h)
 
 default: build push
 
 build:
-	docker build -t $(NAME):current .
+	docker build -t $(NAME):latest .
 
 push:
 	docker tag $(NAME):current $(NAME):$(TAG)
